@@ -12,8 +12,10 @@ public class CorsConfig implements WebMvcConfigurer {
         registry.addMapping("/api/**")
                 .allowedOrigins(
                         "http://localhost:5173",
-                        "https://wedding-front-j18dwh6if-yunnikus-projects.vercel.app"
+                        "https://wedding-front-j18dwh6if-yunnikus-projects.vercel.app",
+                        "https://wedding-front-livid.vercel.app"
                 )
+
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*");
     }
